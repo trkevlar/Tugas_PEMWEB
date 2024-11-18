@@ -15,7 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_id'] = $user['id'];
             $_SESSION['username'] = $user['username'];
             $_SESSION['role'] = $user['role'];
-            header("Location: Dashboard.php");
+            
+            // Arahkan pengguna berdasarkan peran
+            if ($user['role'] == 'admin') {
+                header("Location: dashboard.php");
+            } else {
+                header("Location: index.php");
+            }
             exit();
         } else {
             $error = "Password salah";

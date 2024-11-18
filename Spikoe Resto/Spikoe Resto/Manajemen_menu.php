@@ -191,7 +191,7 @@ if (isset($_GET['search'])) {
             </div>
             <div class="wrapper">
                 <div class="button-save">
-                    <button type="submit">Simpan</button>
+                    <a href="#">Simpan</a>
                 </div>
             </div>
         </form>
