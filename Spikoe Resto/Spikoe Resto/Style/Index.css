@@ -1,0 +1,426 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:0;
+    font-family:"Plus Jakarta Sans";
+    background-color: #FEFFFA;
+}
+.nav-menu{
+    color:#FEFFFA;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-family:"Plus Jakarta Sans";
+    font-size: 16px;
+    margin: 0;
+    flex-grow: 1;
+    padding-left: 290px;
+}
+.nav-button {
+    color: #FEFFFA;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.button{
+    gap: 100px;
+    border-radius: 30px;
+    background: #FEFFFA;
+    color: #1A0800;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.hover-wane{
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+.hover-wane:hover {
+    transform: scale(0.90);
+    color: #8b8c89;
+}
+
+.hover-swall{
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+.hover-swall:hover {
+    transform: scale(1.1);
+}
+.color-changes{
+    transition: color 0.3s ease;
+}
+.color-changes:active {
+    color: #ebc29a; 
+}
+.color-change{
+    transition: color 0.3s ease;
+}
+.color-change:active {
+    color: #8f8f8e;
+}
+.logo {
+    position: absolute;
+    left: 80px;
+    top: 16px;
+}
+.navbar {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        position: fixed;
+        width: 100%; 
+        padding: 20px;
+        z-index: 100;
+}
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.beranda{
+    background-image: url('Assets/Background-brd.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden; 
+    width: 100%;
+    height: 800px;
+    flex-shrink: 0;
+    height: 100hv;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    display: inline-flex;
+}
+.beranda .a{
+    position: relative;
+    justify-content: space-between;
+    padding-left: 20px;
+    transform-origin: center;
+}
+.beranda img{
+    animation: rotateAnimation 15s linear infinite; /* Menambahkan animasi berputar */
+}
+    
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg); 
+    }
+}
+
+.wrapper {
+    padding:0 ;
+    margin:0;
+}
+header {
+    height: 100vh;
+    width: 100%;
+}
+.navbar-list {
+    float: left;
+    color: #FEFFFA;
+    font-size: 18px;
+    padding: 10px 20px 0px;
+    margin-left: 20px;
+    justify-content: center;
+}
+nav ul li a {
+    color: #FEFFFA;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.beranda .left h1{
+    color: #FEFFFA;
+    font-family: "Plus Jakarta Sans";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+.beranda .left {
+    width: 500px;
+    padding-left: 140px;
+    padding-bottom: 240px;
+}
+.beranda .right img{
+    position: relative;
+    z-index: 10;
+}
+.beranda .right{
+    align-self: flex-end;
+    padding-bottom: 300px;
+    padding-right: 140px;
+}
+.about-us {
+    width: 92.1%; 
+    margin: 0 auto;
+    padding-top: 250px;
+    padding-bottom: 70px;
+    background-color: #150600;
+    flex-direction: column;
+    padding-left: 100px;
+    overflow-x: auto;
+}
+
+.about-us h1{
+    color: #FEFFFA;
+    font-family: "Plus Jakarta Sans";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -3.36px;
+    margin-bottom: 50px;
+}
+
+.name-user {
+    padding-top: 35px;
+    font-weight: bold; /* Menebalkan nama user */
+    margin-bottom: 5px; /* Jarak antara nama dan ulasan */
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.reviwer img {
+    position: absolute; 
+    z-index: 10; 
+    top: 960px;
+    margin-left: -30px;
+}
+
+.review-box {
+    border: 1px solid #FEFFFA; 
+    padding: 8px;
+    width: 310px;
+    border-radius: 35px; 
+}
+
+.review-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FEFFFA;
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: "Plus Jakarta Sans";
+}
+.review-user p{
+    font-style: italic;
+}
+.review-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px; 
+    flex-wrap: wrap;
+    margin-left: 0; 
+}
+.Menu{
+    margin: 0 auto;
+    padding-top: 25px;
+    flex-direction: column;
+    padding-left: 75px;
+}
+.Menu h1{
+    color: #150600;
+}
+.Menu .button{
+    color: #000;
+    justify-content: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    display: block;
+    margin: 60px auto;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    margin-right: 50px;
+}
+.title{
+    font-family: "Plus Jakarta Sans";
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: -6.72px;
+}
+.menu-box {
+    background: #FEFFFA;
+    box-shadow: 0px 4px 23.8px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    width: 213px;
+    border-radius: 18px; 
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-family: "Plus Jakarta Sans";
+    color: #000;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.range{
+    color: #000;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: bold;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 40px; 
+    flex-wrap: wrap;
+    margin-left: 0; 
+}
+.pemesanan {
+    background-image: url('Assets/background2.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.pemesanan h1 {
+    color: #FEFFFA;
+    margin-bottom: 50px;
+    padding-left: 75px;
+}
+
+.pemesanan-container {
+    display: flex;
+    justify-content: center; 
+    gap: 90px; 
+}
+
+.pemesanan-box {
+    border: 2px solid #FEFFFA;
+    padding: 8px;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+}
+.button-img{
+    justify-content: center;
+    padding-top: 20px;
+}
+.button-img p, .button-img a {
+    color: #FEFFFA;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -3.36px;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+.copywrite {
+    position: relative;
+    height: auto;
+    color:#E9B47F;
+}
+.copywrite p{
+    font-size: 12px;
+    padding-left: 10px;
+}
+footer{
+    background:#150600;
+    padding: 60px;
+    font-family:"Plus Jakarta Sans";
+}
+footer a{
+    text-decoration: none;
+    color:#E9B47F;
+}
+footer h3{
+    color: #E9B47F;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    margin: 16px;
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+footer .form {
+    margin-left: 20px;
+    margin-top: 16px;
+}
+footer .input{
+    font-family: "Inria Serif";
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 60px;
+    color: #E9B47F;
+}
+footer .by{
+    font-size: 14px;
+}
+.submit-button{
+    border-radius: 20px;
+}
+.links-container .links ul li:hover a {
+    color: #e3d7ca;
+    transition: color 0.3s;
+}

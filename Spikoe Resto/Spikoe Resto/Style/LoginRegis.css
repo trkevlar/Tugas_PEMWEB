@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans";
+    background-repeat: no-repeat;
+    background-color: #FEFFFA;
+}
+
+.container {
+    background-image: url('Assets/background-login1.png');
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+}
+
+.left {
+    flex: 1;
+    padding: 40px;
+    color: #FEFFFA;
+}
+
+.left h1 {
+    font-size: 110px;
+    font-family: "Italianno";
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.left p {
+    font-size: 16px;
+    margin-top: 0px;
+    padding-right: 70px;
+    padding-left: 77px;
+}
+
+.right {
+    flex: 1;
+    background: #150600;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    color: #FEFFFA;
+    height: 100;
+    margin-left: 110px;
+}
+
+.right h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    gap: 15px;
+    color: #FEFFFA;
+}
+
+.right h1, .right form, .right p{
+    padding-left: 110px;
+    padding-top: 10px;
+}
+
+.right input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #FEFFFA;
+    border-radius: 30px;
+    background-color: #150600;
+    color: #FEFFFA;
+}
+input::placeholder {
+    color: #FEFFFA;
+}
+
+.right button {
+    background-color: #FEFFFA;
+    color: #150600;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    transition: transform 0.3s ease;
+}
+
+.right button:hover {
+    transform: scale(0.90);
+    background-color: #9e9e9e;
+}
+
+.right p {
+    margin-top: 10px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33px;
+}
+
+.right a {
+    color: #DDAC72;
+    text-decoration: none;
+}
+
+.right a:hover {
+    text-decoration: underline;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: fixed;
+    width: 100%; 
+    padding: 20px;
+    z-index: 100;
+}
+.logo {
+    position: absolute;
+    left: 80px;
+    top: 16px;
+}
