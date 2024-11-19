@@ -1,0 +1,213 @@
+
+body {
+    margin: 0;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #150600;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 20px;
+    height: 100vh;
+    position: fixed;
+    color: #FEFFFA;
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nav-sections li img {
+    margin-right: 10px;
+    width: 20px; 
+    height: auto;
+}
+
+.logo {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.nav-sections {
+    list-style: none;
+    padding-left: 30px;
+    width: 100%;
+}
+.underline{
+    text-decoration: underline;
+
+}
+
+.nav-sections li {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+.nav-sections li:hover{
+    text-decoration: underline;
+    transform: scale(1.10);
+}
+
+
+.nav-sections li a {
+    text-decoration: none;
+    color: #FEFFFA;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.title{
+    color: #150600;
+    font-family: "Plus Jakarta Sans";
+    font-size: 50px;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
+}
+
+.table-container {
+    display: flex;
+    gap: 50px;
+    width: 930px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.total {
+    width: 100%; 
+    border-spacing: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #150600;
+    font-family: "Plus Jakarta Sans";
+}
+
+.total th, .total td {
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #150600;
+}
+
+.total th {
+    background-color: #532F17;
+    color: #FEFFFA;
+    font-size: 13px;
+}
+.content{
+    padding-left: 300px;
+    padding-top: 35px;
+    padding-bottom: 100px;
+}
+
+.total td  h5{
+    text-align: center;
+    border: 1px solid #FEFFFA;
+    word-wrap: break-word;
+    font-size: 32px;
+    padding-top: 30px;
+}
+.total td p{
+    text-align: center;
+    border: 1px solid #FEFFFA;
+    word-wrap: break-word;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.total h5,
+.total p {
+    margin: 0;
+    padding-left: 5px;
+}
+.table {
+    width: 95%;
+    overflow: hidden;
+    font-family: "Plus Jakarta Sans";
+    border: 1.5px solid #150600;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    border-spacing: 0; 
+}
+
+.table tr:nth-child(1) {
+    background-color: #DDAC72;
+}
+
+.table th {
+    background-color: #532F17; 
+    color: #FEFFFA;
+    text-align: left;
+    border: 1px solid #150600;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+}
+.table td {
+    padding: 10px;
+    border: 1px solid #150600;
+}
+
+.copywrite {
+    position: relative;
+    height: auto;
+    color:#E9B47F;
+}
+.copywrite p{
+    font-size: 12px;
+    padding-left: 10px;
+}
+footer{
+    background:#150600;
+    padding: 60px;
+    font-family:"Plus Jakarta Sans";
+    padding-left: 300px;
+}
+footer a{
+    text-decoration: none;
+    color:#E9B47F;
+}
+footer h3{
+    color: #E9B47F;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    margin: 16px;
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+footer .form {
+    margin-left: 20px;
+    margin-top: 16px;
+}
+footer .input{
+    font-family: "Inria Serif";
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 60px;
+    color: #E9B47F;
+}
+footer .by{
+    font-size: 14px;
+}
+.submit-button{
+    border-radius: 20px;
+}
+.links-container .links ul li:hover a {
+    color: #e3d7ca; 
+    transition: color 0.3s;
+}
