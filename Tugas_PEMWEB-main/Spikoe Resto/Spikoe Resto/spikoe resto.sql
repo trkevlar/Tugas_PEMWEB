@@ -115,8 +115,19 @@ CREATE TABLE IF NOT EXISTS pelanggan(
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Table data pemesanan-- 
+CREATE TABLE IF NOT EXISTS pemesanan (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama_pelanggan VARCHAR(100) NOT NULL,
+    alamat TEXT NOT NULL,
+    metode_pembayaran VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 
 INSERT INTO pengguna (username, password, email, no_telepon, role) 
 VALUES ('adminspikoeresto', '1q2w3e4r5t', 'adminspikoeresto@gmail.com', '081255259452', 'admin')
 ON DUPLICATE KEY UPDATE 
 password='1q2w3e4r5t', email='adminspikoeresto@gmail.com', no_telepon='081255259452', role='admin';
+
+drop database spikoe_resto;
