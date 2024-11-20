@@ -37,7 +37,7 @@ unset($_SESSION['success_message']);
                     <h2>Detail Pelanggan</h2>
                     <p><strong>Nama Kasir:</strong></p>
                     <p><strong>Tanggal:</strong> <?php echo date('d F Y H:i'); ?></p>
-                    <p><strong>Nama Pelanggan:</strong> <?php echo isset($_SESSION['nama_pelanggan']) ? htmlspecialchars($_SESSION['nama_pelanggan']) : ; ?></p>
+                    <p><strong>Nama Pelanggan:</strong> <?php echo isset($_SESSION['nama_pelanggan']) ? htmlspecialchars($_SESSION['nama_pelanggan']) : ''; ?></p>
                     <p><strong>Nomor Pesanan:</strong> 001</p>
                 </div>
                 <div class="order-summary">

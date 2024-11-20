@@ -5,7 +5,7 @@ body {
 }
 
 .background {
-    background: url('restaurant-background.jpg') no-repeat center center/cover;
+    background: url('background_checkout_pesan.png') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
