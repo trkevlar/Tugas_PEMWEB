@@ -129,5 +129,6 @@ INSERT INTO pengguna (username, password, email, no_telepon, role)
 VALUES ('adminspikoeresto', '1q2w3e4r5t', 'adminspikoeresto@gmail.com', '081255259452', 'admin')
 ON DUPLICATE KEY UPDATE 
 password='1q2w3e4r5t', email='adminspikoeresto@gmail.com', no_telepon='081255259452', role='admin';
-
+desc pengguna;
+select*from pengguna;
 drop database spikoe_resto;
